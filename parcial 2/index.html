@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de Alumno</title>
+    <script src="notas.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+<body>
+    <div class="contenedor">
+        <div class="imagen"><img src="img/logo.png" width="220px" height="250px">
+         </div>
+
+
+
+         <h1>Notas de Alumno.</h1>
+       
+         <form>
+ 
+             <div class="formulario">
+             <div class="grid">
+ 
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="icon" placeholder="Nombre completo" autofocus required><br><br>
+                </div>
+
+                    
+
+                 <div class="taller_uno">
+                     <label for="adultos">Taller 1</label>
+                     <input type="number" name="taller_uno" id="taller_uno" min="0" max="10" placeholder="0" required><br><br>
+                 </div>
+
+                 <div class="taller_dos">
+                         <label for="kids">Taller 2</label>
+                         <input type="number" name="taller_uno" id="taller_dos" min="0" max="10"  placeholder="0" required><br><br>
+                 </div>
+
+                 <div class="parcial">
+                     <label for="parcial">N. Parcial</label>
+                     <input type="number" name="parcial" id="parcial" min="0" max="10" placeholder="0" required> <br><br>
+                
+                 </div>  <!--Adultos-->
+
+
+                 <!--Checkbox-->
+
+                 <div class="checkbox">
+                     <label class="opciones rcs">Confirmo que Toda la Informacion es Real.
+                     <input type="checkbox" name="confirmacion" id="confirmacion">
+                     <span class="cuadrado"></span>
+                     
+                     </label>
+                  </div> <!--Checkbox-->
+
+
+                    
+                 
+                 <input type="button"  value="Enviar" onclick="promedio();"  style="width:0 auto; height:25px">
+            
+            
+               
+           
+             
+ 
+            
+         </div> <!--GRID-->
+     </div> <!--formulario!-->
+         </form>
+     </div>    
+
+
+ </ul>   
+</body>
+</html>
