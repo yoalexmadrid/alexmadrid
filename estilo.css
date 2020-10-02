@@ -1,0 +1,229 @@
+body{
+    background: linear-gradient(to right, rgba(132,128,214,1) 0%, rgba(105,100,206,1) 38%, rgba(132,100,206,1) 45%, rgba(152,112,205,1) 51%, rgba(161,115,206,1) 59%, rgba(165,128,224,1) 100%);
+}
+
+
+.contenedor{
+    width:  50%;
+    margin: auto;
+   
+    padding: 15px 0px 50px 0px;
+   background-image: url("img/fondo.jpg");
+    
+
+  
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*---------------Texto--------------*/
+
+input, label, select, textarea, small{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+    font-size: 1.5rem
+    color; #000000;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;;
+    color: black;
+    font-weight:700 ;
+    text-align: center;
+}
+
+.confirmo{
+    color: black;
+}
+/*---------------formulario--------------*/
+
+.opciones{ color:black;
+    font-size: 0.8rem;
+}
+
+input[type=text],input[type=number],input[type=email],input[type=tel],input[type=date],
+input[type=time], select {
+    box-sizing: content-box;
+    width: 100%;
+    height: 50px;
+    border: 1.5px solid #d7d7d7;
+    color: #6d6d6c;
+}
+
+
+    
+
+
+input:focus, select:focus{
+    outline: none;
+    border: 2px solid #5d82c1;
+}
+input[type=button]{
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, rgba(245,86,211,1) 0%, rgba(195,75,163,1) 0%, rgba(173,0,121,1) 49%, rgba(102,137,245,1) 100%);
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: #ccab8e;
+}
+
+/*---Estilo para radio y checkbox-----*/
+
+/*oculatar el boton*/
+
+.rcs input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.rcs{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/*---RADIO----*/
+/*-----SIN SELECCIONAR-----*/
+
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #d7d7d7;
+    
+}
+
+.circulo::after{
+    content: "";
+    position: absolute;
+    display: none;
+
+}
+
+.rcs:hover input ~ .circulo{
+    background-color: #d7d7d7;
+}
+
+/*seleccionado*/
+
+.rcs input:checked~ .circulo{
+    background-color: #5d82c1;
+    border: 2px solid #5d82c1
+}
+
+.rcs input:checked~ .circulo{
+    display: block;
+}
+
+.rcs input:checked~ .circulo{
+    left: 3px;
+    top: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*----checkbox------*/
+/*sin checkear*/
+.cuadrado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #d7d7d7;
+    
+}
+
+.cuadrado::after{
+    content: "";
+    position: absolute;
+    display: none;
+
+}
+
+.rcs:hover input ~ .cuadrado{
+    background-color: #d7d7d7;
+}
+
+/*checkeado*/
+
+.rcs input:checked~ .cuadrado{
+    background-color: #5d82c1;
+    border: 2px solid #5d82c1
+}
+
+.rcs input:checked~ .cuadrado::after{
+    display: block;
+}
+
+.rcs .cuadrado::after{
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    left: 4px;
+
+    
+}
+
+
+/*--------- GRID --------------*/
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 25px;
+}
+
+.nombre{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.taller_uno{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+.taller_dos{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.parcial{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.checkbox{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+ 
+
+
+
